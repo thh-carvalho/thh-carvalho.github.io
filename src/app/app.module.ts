@@ -27,7 +27,8 @@ import { ProjectsComponent } from './projects/projects.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
+    RouterModule.forRoot(
+      [
       {path: '', redirectTo: "/home", pathMatch: "full"},
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
@@ -37,8 +38,7 @@ import { ProjectsComponent } from './projects/projects.component';
     BrowserAnimationsModule
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
-    {provide: APP_BASE_HREF, useValue: '/'}
+    {provide: LocationStrategy, useClass: HashLocationStrategy },
   ],
   bootstrap: [AppComponent]
 })

@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -36,7 +37,8 @@ import { ProjectsComponent } from './projects/projects.component';
     BrowserAnimationsModule
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent]
 })

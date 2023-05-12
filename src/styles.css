@@ -1,0 +1,77 @@
+body{
+    background-color: #111821;
+    background-image: url('./assets/bkg7.jpg');
+    background-size: contain;
+}
+
+.th-nav__main, .th-footer__ng{
+    background-color: #1E2A3A;
+}
+
+#th-home__gd{
+    height: 91vh;
+    background: linear-gradient(to bottom, transparent, rgb(56, 56, 54));
+    border-radius: 0 0 50% 50%;
+}
+
+@media (max-width: 768px){
+    #th-home__gd{
+        border-radius: 0 0 25% 25%;
+    }
+}
+
+#th-home__gd #th-home__img{
+    border-radius: 50%;
+}
+
+.thh-about__ng{
+    line-height: 30px;
+}
+
+.thh-icon__ng{
+    font-size: 30px;
+}
+
+.th-icon__js{
+    color: #EFD81D;
+}
+
+.th-icon__css{
+    color: #129BCF;
+}
+
+.th-icon__angular{
+    color: #D6002F;
+}
+
+.th-icon__google{
+    color: #E24133;
+}
+
+.th-icon__python{
+    color: #316897;
+}
+
+.th-icon__hub{
+    color: #F75833;
+}
+
+.th-icon__sass{
+    color:  #C76494;
+}
+
+.thh-link__btn{
+    background-color: #54B689;
+    color: #fff;
+}
+
+.thh-link__btn:hover{
+    background-color: #54B689;
+    color: #fff;
+}
+
+.th-social__media{
+    font-size: 35px;
+    color: #54B689;
+    border-radius: 50%;
+}

@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark th-nav__main">
+    <div class="container">
+      <a [routerLink]="['/home']" class="navbar-brand text-light" href="#">Thiago Carvalho</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link active text-light thh-link__nav" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/about']" class="nav-link text-light thh-link__nav" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/skills']" class="nav-link text-light thh-link__nav" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/projects']" class="nav-link text-light thh-link__nav" href="#">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
